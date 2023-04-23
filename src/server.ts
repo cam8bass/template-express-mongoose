@@ -13,10 +13,10 @@ async function startServer() {
     await connectToDB(databaseUri!)
     const port = PORT || 3000
     app.listen(port, () => {
-      console.log(`Server is listening on port ${port}`)
+      console.log(`✅ Server is listening on port ${port}`)
     })
   } catch (error) {
-    console.error('Server startup error:', error)
+    console.error('💥 Server startup error:', error)
   }
 }
 
